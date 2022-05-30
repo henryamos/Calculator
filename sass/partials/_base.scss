@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: $base-margin;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke url("/images/bg.jpg") no-repeat center center;
+}

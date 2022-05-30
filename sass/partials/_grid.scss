@@ -1,0 +1,45 @@
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: math.div($base-padding, 5)*2;
+}
+
+button {
+    min-height: 50px;
+    font-size: math.div($font-size, 9)*4;
+    font-weight: 300;
+    border: none;
+    border-radius: math.div($border-radius, 3)+1;
+    cursor: pointer;
+    background: rgb(199, 199, 199);
+    &:hover {
+        filter: brightness(80%);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.operators {
+    background: rgb(87, 87, 87);
+    color: $primary-color;
+    font-size: math.div($font-size, 9)*5;
+}
+
+.equal-sign {
+    grid-column: -2;
+    grid-row: 2 /span 4;
+    background-color: rgb(13, 206, 87);
+    color: $primary-color;
+}
+
+.clear {
+    background-color: rgb(255, 40, 40);
+    &:hover {
+        filter: brightness(80%);
+    }
+}

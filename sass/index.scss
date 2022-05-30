@@ -1,0 +1,10 @@
+@use 'sass:math';
+@import "variables";
+// default css //
+@import "partials/base";
+// calculator & display //
+@import 'partials/calc';
+// buttons grid system//
+@import 'partials/grid';
+//Media Queries //
+@import 'partials/queries';

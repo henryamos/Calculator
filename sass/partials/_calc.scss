@@ -1,0 +1,35 @@
+.calculator {
+    background: $primary-color;
+    width: $base-width;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.calculator-display {
+    background: $tertiary;
+    color: $primary-color;
+    margin: $base-margin;
+    display: flex;
+    align-items: center;
+    border-radius: ($border-radius)-2 ($border-radius)-2 0 0;
+    justify-content: flex-end;
+    h1 {
+        margin: $base-margin;
+        padding: $base-padding;
+        font-family: $font;
+        overflow-x: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: math.div($base-width, 40);
+    &-track {
+        background: $primary-color;
+    }
+    &-thumb {
+        background: #888;
+    }
+    &-thumb:hover {
+        background-color: #555;
+    }
+}
